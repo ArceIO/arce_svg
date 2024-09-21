@@ -1,11 +1,12 @@
 name: arce_svg
 description: Arce Svgs
-version: 0.1.0+1
-publish_to: none
+version: 0.0.1
+#publish_to: https://pub.dartlang.org
+repository: https://github.com/ArceIO/arce_svg
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
-  flutter: 3.19.6
+  flutter: '>=3.19.6'
 
 dependencies:
   args: ^2.4.2
