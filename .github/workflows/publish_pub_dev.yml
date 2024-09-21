@@ -33,11 +33,13 @@ jobs:
       - name: 📦 Install Dependencies
         run: flutter pub get
 
-      - name: 🔐 Setup Pub Credentials
+      - name: 🔐 Setup Pub Credentials 1
         run: |
           mkdir -p $XDG_CONFIG_HOME/dart
-          mkdir -p $HOME/.config/dart
           echo '${{secrets.PUB_CREDENTIALS}}' | base64 --decode > "$XDG_CONFIG_HOME/dart/pub-credentials.json"
+      - name: 🔐 Setup Pub Credentials 2
+        run: |
+          mkdir -p $HOME/.config/dart
           echo '${{secrets.PUB_CREDENTIALS}}' | base64 --decode > "$HOME/.config/dart/pub-credentials.json"
 
       - name: 🌵 Dry Run
