@@ -5,3 +5,6 @@ publish packages
 test github actions
 ## 0.0.2+1 
 fix actions bug
+
+## 0.0.2+4
+public repo
